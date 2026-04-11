@@ -183,7 +183,7 @@ p {
 
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
   background:
@@ -195,8 +195,8 @@ p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to right, rgba(90, 74, 65, 0.28), rgba(90, 74, 65, 0.08)),
-    linear-gradient(to top, rgba(215, 199, 183, 0.18), transparent 44%);
+    linear-gradient(to right, rgba(90, 74, 65, 0.36), rgba(90, 74, 65, 0.12)),
+    linear-gradient(to top, rgba(215, 199, 183, 0.12), transparent 44%);
 }
 
 .hero-content {
