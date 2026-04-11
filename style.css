@@ -454,8 +454,9 @@ p {
 /* optional elegant script accents */
 .script-accent {
   font-family: "Allura", cursive;
-  font-size: 2rem;
-  color: var(--mocha);
+  font-size: 2.2rem;
+  color: #e7d8ca;
+  margin: 6px 0 22px;
 }
 
 @media (max-width: 900px) {
