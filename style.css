@@ -1,23 +1,17 @@
 :root {
-  --bg: #fbf8f4;
-  --bg-soft: #f3ede6;
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-strong: rgba(244, 238, 232, 0.86);
-  --text: #5a4a41;
-  --text-light: #8d7a6f;
-  --heading: #7b685d;
-  --accent: #d7c7b7;
-  --accent-dark: #b9a28e;
-  --taupe: #cfc1b4;
-  --mocha: #9a8577;
-  --deep: #6c584d;
-  --line: rgba(122, 104, 93, 0.12);
-  --white: #ffffff;
-  --shadow: 0 16px 34px rgba(122, 104, 93, 0.08);
-  --radius: 30px;
-  --container: 1180px;
+  --bg: #faf6f1;
+  --bg-soft: #efe5db;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: rgba(241, 232, 223, 0.90);
+  --text: #53433a;
+  --text-light: #7b675d;
+  --heading: #6c594f;
+  --accent: #d6c0a8;
+  --accent-dark: #b89876;
+  --taupe: #c7b5a8;
+  --mocha: #8a7466;
+  --deep: #5a473e;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -187,7 +181,7 @@ p {
   display: flex;
   align-items: center;
   background:
-    linear-gradient(rgba(90, 74, 65, 0.12), rgba(90, 74, 65, 0.14)),
+    linear-gradient(rgba(72, 58, 50, 0.18), rgba(72, 58, 50, 0.24)),
     url("images/hero.jpg") center/cover no-repeat;
 }
 
@@ -195,8 +189,8 @@ p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to right, rgba(90, 74, 65, 0.36), rgba(90, 74, 65, 0.12)),
-    linear-gradient(to top, rgba(215, 199, 183, 0.12), transparent 44%);
+    linear-gradient(to right, rgba(78, 62, 53, 0.50), rgba(78, 62, 53, 0.18)),
+    linear-gradient(to top, rgba(186, 160, 138, 0.10), transparent 46%);
 }
 
 .hero-content {
@@ -210,20 +204,25 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 244, 234, 0.92);
   margin-bottom: 18px;
 }
-
 .hero h1,
 .hero p {
   color: var(--white);
 }
-
+h1 {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #fffaf5;
+}
 .hero-text {
   max-width: 650px;
   font-size: 1.08rem;
-  margin: 24px 0 30px;
-  color: rgba(255, 255, 255, 0.88);
+  margin: 24px 0 20px;
+  color: rgba(255, 248, 241, 0.96);
 }
 
 .hero-buttons {
