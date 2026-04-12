@@ -501,4 +501,28 @@ h1 {
   h1 {
     line-height: 1;
   }
+ @media (max-width: 768px) {
+  .hero h1 {
+    line-height: 1.08;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero p {
+    line-height: 1.75;
+    margin-bottom: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+     .travel-diary-label {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
 }
