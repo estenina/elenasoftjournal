@@ -2,16 +2,25 @@
   --bg: #faf6f1;
   --bg-soft: #efe5db;
   --surface: rgba(255, 255, 255, 0.78);
-  --surface-strong: rgba(241, 232, 223, 0.90);
+  --surface-strong: rgba(241, 232, 223, 0.9);
+
   --text: #53433a;
   --text-light: #7b675d;
   --heading: #6c594f;
+
   --accent: #d6c0a8;
   --accent-dark: #b89876;
   --taupe: #c7b5a8;
   --mocha: #8a7466;
   --deep: #5a473e;
+  --white: #fffaf5;
+
+  --line: rgba(122, 104, 93, 0.12);
+  --shadow: 0 18px 40px rgba(122, 104, 93, 0.08);
+  --radius: 24px;
+  --container: 1200px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -86,12 +95,11 @@ h1 {
   line-height: 1.02;
   font-weight: 500;
   letter-spacing: -0.03em;
-  color: var(--white);
 }
 
 h2 {
   font-size: clamp(2.2rem, 4vw, 3.4rem);
-  line-height: 1.02;
+  line-height: 1.05;
   font-weight: 500;
   margin-bottom: 18px;
 }
@@ -113,6 +121,7 @@ p {
   font-size: 1rem;
 }
 
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -127,6 +136,7 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  position: relative;
 }
 
 .logo {
@@ -175,6 +185,7 @@ p {
   cursor: pointer;
 }
 
+/* Hero */
 .hero {
   position: relative;
   min-height: 82vh;
@@ -189,14 +200,23 @@ p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to right, rgba(78, 62, 53, 0.50), rgba(78, 62, 53, 0.18)),
-    linear-gradient(to top, rgba(186, 160, 138, 0.10), transparent 46%);
+    linear-gradient(to right, rgba(78, 62, 53, 0.5), rgba(78, 62, 53, 0.18)),
+    linear-gradient(to top, rgba(186, 160, 138, 0.1), transparent 46%);
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   max-width: 820px;
+  color: var(--white);
+}
+
+.hero h1,
+.hero p {
+  color: var(--white);
+}
+
+.hero h1 {
   color: var(--white);
 }
 
@@ -207,22 +227,18 @@ p {
   color: rgba(255, 244, 234, 0.92);
   margin-bottom: 18px;
 }
-.hero h1,
-.hero p {
-  color: var(--white);
-}
-h1 {
-  font-size: clamp(2.8rem, 6vw, 4.8rem);
-  line-height: 1.02;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  color: #fffaf5;
-}
+
 .hero-text {
   max-width: 650px;
   font-size: 1.08rem;
-  margin: 24px 0 20px;
+  line-height: 1.75;
+  margin: 24px 0 24px;
   color: rgba(255, 248, 241, 0.96);
+}
+
+.travel-diary-label {
+  display: inline-block;
+  margin-bottom: 1.8rem;
 }
 
 .hero-buttons {
@@ -263,6 +279,7 @@ h1 {
   background: rgba(255, 255, 255, 0.16);
 }
 
+/* Intro */
 .intro {
   background: linear-gradient(to bottom, #f5f0ea, #fcf9f6);
   border-top: 1px solid rgba(122, 104, 93, 0.05);
@@ -276,6 +293,7 @@ h1 {
   align-items: center;
 }
 
+/* Shared grids */
 .about-grid,
 .solo-grid,
 .footer-grid {
@@ -300,6 +318,7 @@ h1 {
   gap: 30px;
 }
 
+/* Cards */
 .card,
 .product-card,
 .quote-box,
@@ -332,6 +351,7 @@ h1 {
   padding: 26px;
 }
 
+/* Destinations */
 .destinations {
   background:
     radial-gradient(circle at center top, rgba(215, 199, 183, 0.16), transparent 28%),
@@ -357,6 +377,7 @@ h1 {
   color: var(--mocha);
 }
 
+/* Quote */
 .quote-box {
   padding: 48px;
   background: linear-gradient(135deg, #d9cabe, #c7b6a8);
@@ -369,6 +390,7 @@ h1 {
   line-height: 1.2;
 }
 
+/* Product */
 .product-card {
   padding: 30px;
 }
@@ -381,6 +403,7 @@ h1 {
   color: var(--mocha);
 }
 
+/* Newsletter */
 .newsletter {
   background: linear-gradient(to bottom, #f5eee7, #fbf8f4);
 }
@@ -414,6 +437,7 @@ h1 {
   outline: 1px solid var(--accent-dark);
 }
 
+/* Footer */
 .site-footer {
   background: linear-gradient(180deg, #f0e5da, #eadfd4);
   color: var(--deep);
@@ -424,8 +448,8 @@ h1 {
 .site-footer p,
 .site-footer li,
 .site-footer a,
-.site-footer h4,
-.site-footer h3 {
+.site-footer h3,
+.site-footer h4 {
   color: var(--deep);
 }
 
@@ -450,7 +474,7 @@ h1 {
   text-align: center;
 }
 
-/* optional elegant script accents */
+/* Script accent */
 .script-accent {
   font-family: "Allura", cursive;
   font-size: 2.2rem;
@@ -458,6 +482,7 @@ h1 {
   margin: 6px 0 22px;
 }
 
+/* Tablet */
 @media (max-width: 900px) {
   .intro-grid,
   .about-grid,
@@ -491,38 +516,142 @@ h1 {
   }
 
   .hero {
-    min-height: 82vh;
+    min-height: 78vh;
   }
 
   .hero-content {
     padding: 40px 0;
   }
+}
 
-  h1 {
-    line-height: 1;
+/* Mobile */
+@media (max-width: 768px) {
+  .section {
+    padding: 76px 0;
   }
- @media (max-width: 768px) {
+
+  .site-header {
+    padding: 0;
+  }
+
+  .nav {
+    padding: 18px 0;
+  }
+
+  .logo {
+    font-size: 1.9rem;
+    line-height: 1.1;
+    max-width: calc(100% - 56px);
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 7rem 0 4.5rem;
+    align-items: center;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(to right, rgba(78, 62, 53, 0.45), rgba(78, 62, 53, 0.24)),
+      linear-gradient(to top, rgba(186, 160, 138, 0.08), transparent 46%);
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .eyebrow {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    letter-spacing: 0.18em;
+    margin-bottom: 1.3rem;
+  }
+
   .hero h1 {
+    font-size: clamp(3rem, 10vw, 4.2rem);
     line-height: 1.08;
+    letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
   }
 
-  .hero p {
-    line-height: 1.75;
+  .hero-text {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    margin: 0 0 2rem;
+    max-width: 100%;
+  }
+
+  .travel-diary-label {
+    display: inline-block;
+    margin-top: 0.2rem;
     margin-bottom: 2rem;
+    line-height: 1.4;
   }
 
   .hero-buttons {
     flex-direction: column;
     gap: 1rem;
+    margin-top: 0.25rem;
   }
 
   .hero-buttons .btn {
     width: 100%;
+    padding: 1rem 1.4rem;
+    font-size: 1.05rem;
   }
-     .travel-diary-label {
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
+
+  .card img {
+    height: 300px;
+  }
+
+  .card-content,
+  .product-card,
+  .quote-box,
+  .newsletter-box {
+    padding: 24px;
+  }
+
+  .quote-box p {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-form input {
+    min-width: 100%;
   }
 }
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .container {
+    width: min(90%, var(--container));
+  }
+
+  .logo {
+    font-size: 1.75rem;
+  }
+
+  .hero {
+    padding: 6.5rem 0 4rem;
+  }
+
+  .eyebrow {
+    font-size: 0.82rem;
+    letter-spacing: 0.16em;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 12vw, 3.7rem);
+    line-height: 1.1;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .btn {
+    padding: 0.95rem 1.2rem;
+  }
 }
