@@ -1,97 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elena Soft Journal</title>
-  <meta
-    name="description"
-    content="Luxury travel, feminine wellness, curated stays, elegant itineraries, and solo travel inspiration."
-  />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Inter:wght@400;500;600&family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a href="#" class="logo">Elena Soft Journal</a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
-        ☰
-      </button>
-
       <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#destinations">Destinations</a>
-        <a href="#solo">Solo Travel</a>
+        <a href="#journal">Journal</a>
         <a href="#shop">Shop Guides</a>
+        <a href="#solo">Solo Travel</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <p class="eyebrow">Luxury travel • feminine wellness • soft inspiration</p>
-      <h1>Travel beautifully, softly, and on your own terms.</h1>
-      <p class="hero-text">
-        Curated stays, elegant itineraries, solo travel advice, and wellness-inspired
-        escapes for women who love beauty, confidence, and unforgettable places.
-      </p>
-      <p class="script-accent">travel diary</p>
-      <div class="hero-buttons">
-        <a href="#shop" class="btn btn-primary">Shop Guides</a>
-        <a href="#destinations" class="btn btn-secondary">Explore Destinations</a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Luxury travel • feminine wellness • soft inspiration</p>
+        <h1>Travel beautifully, softly, and on your own terms.</h1>
+        <p class="hero-text">Curated stays, elegant itineraries, solo travel advice, and wellness-inspired escapes for women who love beauty, confidence, and unforgettable places.</p>
+        <span class="script-accent">travel diary</span>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop Guides</a>
+          <a href="#destinations" class="btn btn-secondary">Explore Destinations</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-tile large">
+          <div class="monogram">E</div>
+          <div class="tile-content">
+            <span class="tile-kicker">Signature mood</span>
+            <div class="tile-title">Luxury editorial world for feminine travel</div>
+          </div>
+        </div>
+        <div class="hero-tile">
+          <div class="tile-content">
+            <span class="tile-kicker">Placeholder</span>
+            <div class="tile-title">Elegant stays and beautiful rituals</div>
+          </div>
+        </div>
+        <div class="hero-tile">
+          <div class="tile-content">
+            <span class="tile-kicker">Placeholder</span>
+            <div class="tile-title">Soft city moments and curated escapes</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="intro section">
-    <div class="container intro-grid">
-      <div>
+  <section class="section about" id="about">
+    <div class="container split-grid">
+      <div class="about-copy">
         <p class="section-label">Welcome</p>
         <h2>A luxury travel world for women who crave beauty and meaning.</h2>
+        <p>Elena Soft Journal is a refined space for elegant hotel stays, curated city moments, feminine rituals, solo travel confidence, and soft luxury inspiration.</p>
+        <p>Whether you travel alone or with your best friend, this is where beauty meets guidance.</p>
       </div>
-      <div>
-        <p>
-          Elena Soft Journal is a refined space for elegant hotel stays, curated
-          city moments, feminine rituals, solo travel confidence, and soft luxury
-          inspiration. Whether you travel alone or with your best friend, this is
-          where beauty meets guidance.
-        </p>
+
+      <div class="editorial-frame" aria-label="Editorial image placeholder">
+        <span class="frame-label">Future image space</span>
+        <div class="frame-note">Reserved for your future portrait, editorial brand image, or luxury hotel photo.</div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section about">
-    <div class="container about-grid">
-      <div class="about-image">
-        <img src="images/about.jpg" alt="Elena Soft Journal portrait" />
-      </div>
-      <div class="about-text">
+  <section class="section about" id="about-elena">
+    <div class="container split-grid">
+      <div class="about-copy">
         <p class="section-label">About Elena</p>
         <h2>Travel became a way for me to discover beauty, softness, and confidence.</h2>
-        <p>
-          I created this journal for women who are drawn to refined places,
-          elegant mornings, wellness rituals, and the kind of travel that feels
-          both inspiring and deeply personal.
-        </p>
-        <p>
-          Here you’ll find carefully chosen stays, destination ideas, solo travel
-          guidance, and elevated itineraries designed to help you experience life
-          more beautifully — whether you go alone, with your best friend, or simply
-          in search of something new.
-        </p>
+        <p>I created this journal for women who are drawn to refined places, elegant mornings, wellness rituals, and the kind of travel that feels both inspiring and deeply personal.</p>
+        <p>Here you’ll find carefully chosen stays, destination ideas, solo travel guidance, and elevated itineraries designed to help you experience life more beautifully — whether you go alone, with your best friend, or simply in search of something new.</p>
+      </div>
+
+      <div class="editorial-frame" aria-label="Editorial image placeholder">
+        <span class="frame-label">Brand image space</span>
+        <div class="frame-note">This block can later hold a portrait, hotel lobby shot, or a soft travel editorial image.</div>
       </div>
     </div>
   </section>
 
-  <section id="destinations" class="section destinations">
+  <section class="section destinations" id="destinations">
     <div class="container">
       <div class="section-heading">
         <p class="section-label">Destinations</p>
@@ -100,24 +103,27 @@
 
       <div class="card-grid">
         <article class="card">
-          <img src="images/paris.jpg" alt="Paris destination" />
+          <div class="card-media"></div>
           <div class="card-content">
+            <span class="card-tag">Paris</span>
             <h3>Paris</h3>
             <p>Elegant cafés, soft mornings, luxury stays, and feminine city moments.</p>
           </div>
         </article>
 
         <article class="card">
-          <img src="images/charleston.jpg" alt="Charleston destination" />
+          <div class="card-media"></div>
           <div class="card-content">
+            <span class="card-tag">Charleston</span>
             <h3>Charleston</h3>
             <p>Refined Southern charm, polished stays, beautiful brunches, and wellness.</p>
           </div>
         </article>
 
         <article class="card">
-          <img src="images/miami.jpg" alt="Miami destination" />
+          <div class="card-media"></div>
           <div class="card-content">
+            <span class="card-tag">Miami</span>
             <h3>Miami</h3>
             <p>Sunlit luxury, chic hotels, beautiful dinners, and feminine energy.</p>
           </div>
@@ -126,34 +132,62 @@
     </div>
   </section>
 
-  <section id="solo" class="section solo-section">
+  <section class="section journal-feature" id="journal">
+    <div class="container journal-grid">
+      <div class="journal-copy">
+        <p class="section-label">The Journal</p>
+        <h2>Editorial notes from beautiful places.</h2>
+        <p>A space for your travel reflections, refined city edits, elegant hotel notes, and feminine observations from the places you love most.</p>
+        <div class="journal-list">
+          <div>Paris Morning Notes</div>
+          <div>How to Travel Alone Beautifully</div>
+          <div>What Makes a Hotel Feel Truly Luxurious</div>
+        </div>
+      </div>
+
+      <div class="journal-cards">
+        <article class="journal-card tall">
+          <div class="tile-content">
+            <span class="tile-kicker">Feature story</span>
+            <div class="tile-title">A slower, softer, more beautiful way to travel</div>
+          </div>
+        </article>
+        <article class="journal-card">
+          <div class="tile-content">
+            <span class="tile-kicker">City note</span>
+            <div class="tile-title">The places that make mornings feel cinematic</div>
+          </div>
+        </article>
+        <article class="journal-card">
+          <div class="tile-content">
+            <span class="tile-kicker">Travel feeling</span>
+            <div class="tile-title">Luxury is often a feeling before a destination</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section solo" id="solo">
     <div class="container solo-grid">
       <div>
         <p class="section-label">Solo Travel for Women</p>
         <h2>How to travel alone and still feel safe, elegant, and deeply feminine.</h2>
-        <p>
-          Solo travel does not have to feel lonely or intimidating. It can feel
-          soft, confident, elevated, and empowering — when you choose the right
-          hotel, neighborhood, routines, and mindset.
-        </p>
-        <ul class="luxury-list">
+        <p>Solo travel does not have to feel lonely or intimidating. It can feel soft, confident, elevated, and empowering — when you choose the right hotel, neighborhood, routines, and mindset.</p>
+        <ul class="benefits">
           <li>How to choose a hotel as a solo female traveler</li>
           <li>What to wear for confidence and comfort</li>
           <li>How to dine alone beautifully</li>
           <li>Simple ways to stay safe without losing softness</li>
         </ul>
       </div>
-
       <div class="quote-box">
-        <p>
-          “Luxury is not only where you stay — it is also how you feel while you
-          move through the world.”
-        </p>
+        <p>“Luxury is not only where you stay — it is also how you feel while you move through the world.”</p>
       </div>
     </div>
   </section>
 
-  <section id="shop" class="section shop">
+  <section class="section shop" id="shop">
     <div class="container">
       <div class="section-heading">
         <p class="section-label">Shop Digital Guides</p>
@@ -163,87 +197,69 @@
       <div class="shop-grid">
         <article class="product-card">
           <h3>Paris Luxury Weekend Guide</h3>
-          <p>
-            A curated itinerary with hotel ideas, cafés, elegant moments, and soft
-            travel inspiration.
-          </p>
-          <span class="price">$19</span>
-          <a href="#" class="btn btn-primary">Coming Soon</a>
+          <p>A curated itinerary with hotel ideas, cafés, elegant moments, and soft travel inspiration.</p>
+          <div class="product-meta">
+            <span class="price">$19</span>
+            <span class="pill">Coming Soon</span>
+          </div>
         </article>
 
         <article class="product-card">
           <h3>Elegant Solo Travel Guide</h3>
-          <p>
-            A feminine, confidence-building PDF with safety tips, hotel strategy,
-            and solo rituals.
-          </p>
-          <span class="price">$24</span>
-          <a href="#" class="btn btn-primary">Coming Soon</a>
+          <p>A feminine, confidence-building PDF with safety tips, hotel strategy, and solo rituals.</p>
+          <div class="product-meta">
+            <span class="price">$24</span>
+            <span class="pill">Coming Soon</span>
+          </div>
         </article>
 
         <article class="product-card">
           <h3>Luxury Girls’ Escape Guide</h3>
-          <p>
-            Curated ideas for beautiful trips with your best friend — stylish,
-            easy, and memorable.
-          </p>
-          <span class="price">$22</span>
-          <a href="#" class="btn btn-primary">Coming Soon</a>
+          <p>Curated ideas for beautiful trips with your best friend — stylish, easy, and memorable.</p>
+          <div class="product-meta">
+            <span class="price">$22</span>
+            <span class="pill">Coming Soon</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <h3>Soft Wellness Travel Guide</h3>
+          <p>Morning rituals, packing ideas, wellness habits, and small details that make travel feel better.</p>
+          <div class="product-meta">
+            <span class="price">$18</span>
+            <span class="pill">Coming Soon</span>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section newsletter">
-    <div class="container newsletter-box">
-      <p class="section-label">Stay Connected</p>
-      <h2>Get soft luxury travel inspiration in your inbox</h2>
-      <p>
-        Join for future destination edits, elegant travel tips, and curated PDF releases.
-      </p>
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Elena Soft Journal</div>
+          <p>A luxury editorial travel space for women who love beautiful hotels, feminine rituals, and intentional escapes.</p>
+        </div>
 
-      <form class="newsletter-form">
-        <input type="email" placeholder="Your email address" />
-        <button type="submit" class="btn btn-primary">Join</button>
-      </form>
-    </div>
-  </section>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#about">About</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#journal">Journal</a>
+          <a href="#shop">Shop Guides</a>
+        </div>
 
-  <footer id="contact" class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Elena Soft Journal</h3>
-        <p>
-          Luxury travel, feminine wellness, elegant stays, and curated inspiration
-          for women.
-        </p>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>hello@elenasoftjournal.com</p>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+        </div>
       </div>
-
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#solo">Solo Travel</a></li>
-          <li><a href="#shop">Shop Guides</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Social</h4>
-        <ul>
-          <li><a href="https://instagram.com/elena.softjournal" target="_blank">Instagram</a></li>
-          <li><a href="#">Pinterest</a></li>
-          <li><a href="mailto:hello@elenasoftjournal.com">Email</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>© 2026 Elena Soft Journal. All rights reserved.</p>
+      <div class="footer-bottom">© 2026 Elena Soft Journal. All rights reserved.</div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
