@@ -350,6 +350,47 @@ p {
   gap: 54px;
   align-items: center;
 }
+#about-elena h2 {
+  font-size: clamp(2.8rem, 4.6vw, 4.6rem);
+  line-height: 1.05;
+  max-width: 9ch;
+  color: #5f4a3f;
+  margin-bottom: 1.5rem;
+}
+
+#about-elena .about-copy {
+  max-width: 640px;
+}
+
+#about-elena .about-copy p {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #725e52;
+}
+
+#about-elena .section-label {
+  color: #9a8477;
+  margin-bottom: 1.1rem;
+}
+
+#about-elena .split-grid {
+  align-items: start;
+  gap: 72px;
+}
+
+#about-elena .editorial-frame {
+  min-height: 620px;
+  background:
+    radial-gradient(circle at top right, rgba(255,255,255,0.22), transparent 20%),
+    linear-gradient(145deg, rgba(217,197,179,0.30), rgba(122,100,88,0.08)),
+    linear-gradient(to bottom, #eadfd3, #ddcfc0);
+}
+
+#about-elena .frame-note {
+  color: #7a6458;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
 
 .about-copy p + p {
   margin-top: 18px;
