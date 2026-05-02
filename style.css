@@ -282,12 +282,15 @@ p {
 .hero-tile {
   position: relative;
   overflow: hidden;
-  border-radius: 34px;
-  border: 1px solid rgba(255, 250, 245, 0.08);
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015)),
-    linear-gradient(to bottom, rgba(217, 197, 179, 0.04), rgba(255, 255, 255, 0.02));
-  box-shadow: 0 30px 60px rgba(10, 10, 14, 0.24);
+  border-radius: 32px;
+  min-height: 260px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 28px;
+  color: #fff;
 }
 
 .hero-tile::before {
@@ -300,9 +303,23 @@ p {
 }
 
 .hero-tile.large {
-  grid-row: span 2;
+  min-height: 520px;
 }
-
+.tile-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 20, 35, 0.72),
+    rgba(15, 20, 35, 0.18)
+  );
+  z-index: 1;
+}
+.tile-content,
+.monogram {
+  position: relative;
+  z-index: 2;
+}
 .tile-content {
   position: absolute;
   left: 24px;
@@ -313,32 +330,43 @@ p {
 
 .tile-kicker {
   display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.72rem;
-  color: rgba(255, 250, 245, 0.72);
   margin-bottom: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.9;
 }
 
 .tile-title {
-  font-family: "Bodoni Moda", serif;
-  color: var(--white);
-  font-size: 1.38rem;
-  line-height: 1.1;
-  max-width: 11ch;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  line-height: 1.05;
+  max-width: 280px;
 }
 
 .monogram {
   position: absolute;
-  top: 30px;
+  top: 24px;
   left: 28px;
-  z-index: 1;
-  font-family: "Bodoni Moda", serif;
-  font-size: 4.2rem;
-  line-height: 0.9;
-  color: rgba(217, 197, 179, 0.9);
+  font-size: 4rem;
+  font-family: "Cormorant Garamond", serif;
+  color: rgba(255,255,255,0.85);
+}
+/* ФОТОГРАФИИ */
+.tile-signature {
+  background-image: url("images/signature-mood.jpg");
+  background-position: center;
 }
 
+.tile-rituals {
+  background-image: url("images/elegant-rituals.jpg");
+  background-position: center;
+}
+
+.tile-city {
+  background-image: url("images/soft-city.jpg");
+  background-position: center;
+}
 /* About */
 .about {
   background: linear-gradient(to bottom, #f6f1eb, var(--bg));
